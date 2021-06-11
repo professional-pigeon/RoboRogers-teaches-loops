@@ -34,13 +34,12 @@ $(document).ready(function(){
     event.preventDefault();
 
     let element = $("#validationDefault01").val()
-    stringArray = []
-    alert(element)
 
     roboResponse(element)
-    alert(stringArray)
+    console.log(stringArray)
+    presentableString = stringArray.join(", ")
 
-    $("h4").html("<p>" + stringArray + "</p>")
+    $("#responseP").html("<p>" + presentableString + "</p>")
 
   });
 });
