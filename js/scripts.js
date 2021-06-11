@@ -48,3 +48,10 @@ function roboResponse(element) {
   });
   return stringArray
 }
+
+numberArray.forEach(function(number) {
+  if (numberArray.includes(3, numberArray.indexOf(number))) {
+    numberArray.splice(numberArray.indexOf(number), 1)
+  }
+  return numberArray
+})
