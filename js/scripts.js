@@ -16,7 +16,7 @@ test
 
 function roboResponse(element) {
   console.log(typeof(element)) 
-  numberString = toString(element)
+  numberString = element.toString()
   console.log(element)
   console.log(numberString.includes("3"))
 
