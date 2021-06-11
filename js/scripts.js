@@ -25,11 +25,22 @@ function roboResponse(element) {
     } else {
     }
   });
-  console.log(stringArray)
 }
 
 // User Interface Logic
 
 $(document).ready(function(){
-  $("#formOne").submit(function(event){
+  $("#numberForm").submit(function(event){
     event.preventDefault();
+
+    let element = $("#validationDefault01").val()
+    stringArray = []
+    alert(element)
+
+    roboResponse(element)
+    alert(stringArray)
+
+    $("h4").html("<p>" + stringArray + "</p>")
+
+  });
+});
