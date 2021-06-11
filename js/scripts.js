@@ -1,5 +1,3 @@
-
-
 // Business Logic
 
 function roboResponse(element) {

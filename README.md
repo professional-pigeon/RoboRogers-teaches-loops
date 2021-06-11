@@ -45,6 +45,42 @@ or
 
 * includes() is string or array protoype. It can't take numbers. I was able to turn a number array into a string array and then manipulate the string how I wanted. I would love to know if there's a way to use an "includes" style method on a numerical value as I was not able to implement one in an efficient way. Reach out if you have a suggestion.
 
+## Function Tests
+
+Describe: roboResponse()
+
+Test: "It should turn the number into an array equal to the range of that number"
+Code: roboResponse(5)
+Expected Output: [0, 1, 2, 3, 4, 5]
+
+Test: "It should locate the number 3 in the array"
+Code: roboResponse(5)
+Expected Output: (4)
+
+Test: "It should locate any number that includes a 3 in an array"
+Code: roboResponse(14)
+Expected Output: (4, 14)
+
+Test: "It should turn an array of numbers into an array of strings"
+Code: roboResponse(14)
+Expected Output: ["0", "1", "2", "3", "4", "5"]
+
+Test: "It should remove any string containing a "3" in an array"
+Code: roboResponse(14)
+Expected Output: ["0", "1", "2", "4", "5", "6", "7", "8", "9", "10", "11", "12", "14"]
+
+Test: "It should replace any removed 3 with the phrase "Won't you be my Neighbor?""
+Code: roboResponse(14)
+Expected Output: ["0", "1",  "2", "Won't you be my Neighbor?", "4", "5", "6", "7", "8", "9", "10", "11", "12", "Won't you be my Neighbor?", "14"]
+
+Test: "It should replace any string containing a "2" with "Boop!""
+Code: roboResponse(14)
+Expected Output: ["0", "1",  "Boop!", "Won't you be my Neighbor?", "4", "5", "6", "7", "8", "9", "10", "11", "Boop!", "Won't you be my Neighbor?", "14"]
+
+Test: "It should replace any string containing a "1" with "Beep!""
+Code: roboResponse(14)
+Expected Output: ["0", "Beep!", "Boop!", "Won't you be my Neighbor?", "4", "5", "6", "7", "8", "9", "Beep!", "Beep!", "Boop!", "Won't you be my Neighbor?", "Beep!"]
+
 ## License
 
 MIT License
