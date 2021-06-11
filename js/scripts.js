@@ -1,31 +1,40 @@
 Describe: roboResponse(numbers)
 
-test: "should tell you a number is a number"
+test: "will tell you a number is a number"
 code: roboResponse(2)
 expected output: (number)
 
-test: "should recognize a number is 3"
-code: roboResponse(3)
-expected output: (true)
-
-test: "should turn a number into a range of numbers"
+test: "will turn a number into a range of numbers"
 code: roboResponse(5)
 expected output: [1, 2, 3, 4, 5]
+
+test: "will tell you if an array has the number 3"
+code: roboResponse(5)
+expected output: (true)
+
+test: "will tell you the position of 3 in an array"
+code: roboResponse(5)
+expected output: (3)
+
+test: "will remove 3 from array"
+code: roboResponse(5)
+expected output: [0, 1, 2, 4, 5]
 
 test
 
 function roboResponse(element) {
   console.log(typeof(element)) 
 
-  let number = 1
   let numberArray = []
 
-  for (i = 0; i < 100; i ++) {
+  for (i = 0; i <= element; i ++) {
     if (element > i) {
       numberArray.push(i)
     }
-    return numberArray
   }
+  console.log(numberArray.includes(3))
+  numberArray.splice(numberArray.indexOf(3), 1)
+  return numberArray
 }
 
 
