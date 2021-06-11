@@ -2,11 +2,11 @@
 
 function roboResponse(element) {
 
-  let numberArray = []
+  let numberArray = [];
 
   for (i = 0; i <= element; i ++) {
     if (element >= i) {
-      numberArray.push(i)
+      numberArray.push(i);
     }
   }
 
@@ -31,14 +31,14 @@ $(document).ready(function(){
   $("#numberForm").submit(function(event){
     event.preventDefault();
 
-    let element = $("#validationDefault01").val()
+    let element = $("#validationDefault01").val();
 
-    roboResponse(element)
-    presentableString = stringArray.join(", ")
+    roboResponse(element);
+    presentableString = stringArray.join(", ");
     
-    $("#hidden").fadeIn(2000)
-    $("#responseH").text("Thank you for taking the time to be here with me today. Here is what I have to say and I'd like you to sing it with me if you can")
-    $("#responseP").text(presentableString)
+    $("#hidden").fadeIn(2000);
+    $("#responseH").text("Thank you for taking the time to be here with me today. Here is what I have to say and I'd like you to sing it with me if you can:");
+    $("#responseP").text(presentableString);
 
   });
 });

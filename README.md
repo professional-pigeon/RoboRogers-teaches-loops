@@ -39,7 +39,7 @@ This is a practice in loops and arrays and ends up being deceptively simple. It 
 
 ## Future plans
 
-* includes() is string or array protoype. It can't take numbers. I was able to turn a number array into a string array and then manipulate the string how I wanted. I would love to know if there's a way to use an "includes" style method on a numerical value as I was not able to implement one in an efficient way. Reach out if you have a suggestion.
+* includes( ) works with a string or array protoype. It can't take numbers. I was able to turn a number array into a string array and then manipulate the string how I wanted. I would love to know if there's a way to use an "includes" style method on a numerical value as I was not able to implement one in an efficient way. Reach out if you have a suggestion.
 
 ## Function Tests
 
