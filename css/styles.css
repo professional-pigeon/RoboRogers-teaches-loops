@@ -1,7 +1,11 @@
 body {
   font-family: Georgia;
+  background-color: antiquewhite;
 }
 
+.jumbotron {
+  background-color: aquamarine;
+}
 #hidden {
   display: none;
 }

@@ -29,13 +29,9 @@ This is a practice in loops and arrays and ends up being deceptively simple. It 
 
 ## Setup/Installation Requirements
 
-* Clone this repository from github to your desktop: [Github link for this project](https://github.com/professional-pigeon/language-selector)
+* Clone this repository from github to your desktop: [Github link for this project](https://github.com/professional-pigeon/RoboRogers-teaches-loops)
 * navigate to the top level of the directory
 * Open the file named "index.html" in your browser.
-
-or
-
-* open this [link]
 
 ## Known Bugs
 

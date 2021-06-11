@@ -37,7 +37,7 @@ $(document).ready(function(){
     presentableString = stringArray.join(", ")
     
     $("#hidden").fadeIn(2000)
-    $("#responseH").text("Thank you for taking the time to talk with me today, here is what I have to say")
+    $("#responseH").text("Thank you for taking the time to be here with me today. Here is what I have to say and I'd like you to sing it with me if you can")
     $("#responseP").text(presentableString)
 
   });
