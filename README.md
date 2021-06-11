@@ -1,6 +1,6 @@
 # Robo-rogers language generator
 
-#### Robo-rogers language
+#### Robo-rogers response generator
 
 #### By Kyle Kay-Perez
 

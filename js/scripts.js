@@ -35,8 +35,10 @@ $(document).ready(function(){
 
     roboResponse(element)
     presentableString = stringArray.join(", ")
-
-    $("#responseP").html("<p>" + presentableString + "</p>")
+    
+    $("#hidden").fadeIn(2000)
+    $("#responseH").text("Thank you for taking the time to talk with me today, here is what I have to say")
+    $("#responseP").text(presentableString)
 
   });
 });

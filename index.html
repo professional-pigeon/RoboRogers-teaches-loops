@@ -9,25 +9,26 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron"  id="imageGen">
+    <div class="jumbotron">
       <div id="initText">
         <h1>RoboRogers</h1>
-        <p>Premise: Uh-oh, Mr Rogers spirit has transcended to a digital consciousness. If you give a number to them, they'll return your number as a range (with a few gentle responses). </p>
+        <p>Premise: Uh-oh, Mr Rogers has transcended to a digital consciousness. If you give a number to him, he'll return your number as a range (with a few gentle responses). </p>
       </div>
     </div>
-    <div id="show">
-      <div class="d-flex">
+    <div class="row">
+      <div class="col">
         <form id="numberForm" name="numberForm">
           <div class="form-group">
             <label class="question-title" for="validationDefault01">Give us a number!</label>
             <input id="validationDefault01" class="form-control" type="number" required>
-            <button type="submit" class="btn btn-primary">Primary</button>
           </div>
+          <button type="submit" class="btn btn-primary">Primary</button>
         </form>
       </div>
-      <br>
-      <h4 id="responseH">Response from the gentle RoboRogers:</h1>
-        <p id="responseP"></p>
+      <div class="col" id="hidden">
+        <h4 id="responseH"></h4>
+        <p id="responseP" class="hidden2"></p>
+      </div>
     </div>
   </div>
 
