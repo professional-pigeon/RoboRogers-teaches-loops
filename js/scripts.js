@@ -36,7 +36,6 @@ $(document).ready(function(){
     let element = $("#validationDefault01").val()
 
     roboResponse(element)
-    console.log(stringArray)
     presentableString = stringArray.join(", ")
 
     $("#responseP").html("<p>" + presentableString + "</p>")
