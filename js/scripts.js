@@ -8,17 +8,27 @@ test: "should recognize a number is 3"
 code: roboResponse(3)
 expected output: (true)
 
-test: "should recognize a number with a 3 in any position"
-code: roboResponse(13)
-expected output: (true)
+test: "should turn a number into a range of numbers"
+code: roboResponse(5)
+expected output: [1, 2, 3, 4, 5]
 
 test
 
 function roboResponse(element) {
   console.log(typeof(element)) 
-  numberString = element.toString()
-  console.log(element)
-  console.log(numberString.includes("3"))
+
+  let number = 1
+  let numberArray = []
+
+  for (i = 0; i < 100; i ++) {
+    if (element > i) {
+      numberArray.push(i)
+    }
+    return numberArray
+  }
+}
+
+
 
   if (true === numberString.includes("3")) {
     return true
